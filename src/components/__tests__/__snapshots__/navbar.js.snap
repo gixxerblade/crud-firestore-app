@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Worked better than you thought it would... 1`] = `
+Array [
+  <hr />,
+  <ul
+    className="sc-AxjAm cJmUhi"
+  >
+    <li>
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/about"
+        onClick={[Function]}
+      >
+        about
+      </a>
+    </li>
+    <li>
+      <a
+        href="/account"
+        onClick={[Function]}
+      >
+        account
+      </a>
+    </li>
+  </ul>,
+  <hr />,
+]
+`;

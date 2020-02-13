@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body,
+html {
+  color: #d9dcd6;
+  font-family: "Poppins";
+}
+h1 {
+  color: #3a7ca5;
+  text-align: center;
+  font-size: 2em;
+}
+li {
+  text-decoration: none;
+}
+.pencil,
+.trash {
+  color: #423075;
+}
+.pencil:hover {
+  color: #e19526;
+}
+.trash:hover {
+  color: #7b9095;
+}
+.pencil:active,
+.trash:active {
+  color: #70a9a1;
+}

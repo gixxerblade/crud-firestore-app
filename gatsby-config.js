@@ -1,8 +1,10 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `pntry`,
+    description: `Helpful to organize stuff`,
+    author: `S. Clark`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +27,29 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        features: {
+          auth: true,
+          database: false,
+          firestore: true,
+          storage: false,
+          messaging: false,
+          functions: true,
+          performance: false,
+        },
+        credentials: {
+          apiKey: `${process.env.GATSBY_FIREBASE_API_KEY}`,
+          authDomain: `${process.env.GATSBY_FIREBASE_AUTH_DOMAIN}`,
+          databaseURL: `${process.env.GATSBY_FIREBASE_DATABASE_URL}`,
+          projectId: "pntryapp",
+          storageBucket: `${process.env.GATSBY_FIREBASE_STORAGE_BUCKET}`,
+          messagingSenderId: `${process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID}`,
+          appId: `${process.env.GATSBY_FIREBASE_APP_ID}`,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
